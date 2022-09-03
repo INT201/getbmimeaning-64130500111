@@ -6,18 +6,22 @@ function calculateBMI(weight, height) {
 }
 
 function getBMIMeaning(weight, height) {
-  
-  if(calculateBMI(weight,height) < 18.5){
+  let BMI = calculateBMI(weight, height)
+  if(BMI < 18.5){
       return "Underweight"
-  } else if(calculateBMI(weight,height) >= 18.5 && calculateBMI(weight,height) <= 24.9){
+  } else if(BMI >= 18.5 && BMI <= 24.9){
      return "Normal weight"
-  } else if(calculateBMI(weight,height)> 25.0){
+  } else if(BMI > 25.0){
     return "Overweight"
   }
 }
 
-console.log(calculateBMI(69, 1.68))
-console.log(getBMIMeaning(65, 1.8))
-console.log(getBMIMeaning(80, 1.7))
-console.log(getBMIMeaning(44, 1.6))
+// console.log(calculateBMI(69, 1.68))
+// console.log(getBMIMeaning(65, 1.8))
+// console.log(getBMIMeaning(80, 1.7))
+// console.log(getBMIMeaning(44, 1.6))
+// calculateBMI(69, 1.68)
+// getBMIMeaning(65, 1.8)
+// getBMIMeaning(80, 1.)
+// getBMIMeaning(44, 1.6)
 module.exports = getBMIMeaning
